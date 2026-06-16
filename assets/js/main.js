@@ -78,3 +78,15 @@
     }, 2600);
   });
 })();
+// Progress bar
+(function() {
+  const bar = document.getElementById('progressBar');
+  const update = function() {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    const p = h > 0 ? Math.min(1, window.scrollY / h) : 0;
+    bar.style.transform = 'scaleX(' + p + ')';
+  };
+  window.addEventListener('scroll', update, { passive: true });
+  window.addEventListener('resize', update);
+  update();
+})();
