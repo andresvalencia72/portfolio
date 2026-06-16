@@ -11,6 +11,46 @@
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="header__inner container">
+      <a href="#inicio" class="header__logo">
+        <span class="header__logo-icon">A</span>
+        <span class="header__logo-text">Andrés Val.</span>
+      </a>
+      <nav class="header__nav">
+        <div class="header__nav-links" id="navLinks">
+          <a href="#inicio" class="header__nav-link" data-nav>Inicio<span class="header__nav-underline"></span></a>
+          <a href="#sobre" class="header__nav-link" data-nav>Sobre mí<span class="header__nav-underline"></span></a>
+          <a href="#habilidades" class="header__nav-link" data-nav>Habilidades<span class="header__nav-underline"></span></a>
+          <a href="#proyectos" class="header__nav-link" data-nav>Proyectos<span class="header__nav-underline"></span></a>
+          <a href="#articulos" class="header__nav-link" data-nav>Artículos<span class="header__nav-underline"></span></a>
+          <a href="#contacto" class="header__nav-link" data-nav>Contacto<span class="header__nav-underline"></span></a>
+        </div>
+        <button class="header__theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+          <span class="header__theme-icon">
+            <span class="header__icon-moon"></span>
+            <span class="header__icon-sun"></span>
+          </span>
+        </button>
+        <button class="header__burger" id="burgerBtn" aria-label="Menú">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu__close" id="menuClose" aria-label="Cerrar">✕</button>
+    <a href="#inicio" class="mobile-menu__link" data-mobile-nav>Inicio</a>
+    <a href="#sobre" class="mobile-menu__link" data-mobile-nav>Sobre mí</a>
+    <a href="#habilidades" class="mobile-menu__link" data-mobile-nav>Habilidades</a>
+    <a href="#proyectos" class="mobile-menu__link" data-mobile-nav>Proyectos</a>
+    <a href="#articulos" class="mobile-menu__link" data-mobile-nav>Artículos</a>
+    <a href="#contacto" class="mobile-menu__link mobile-menu__link--highlight" data-mobile-nav>Contacto</a>
+  </div>
 
   <script src="assets/js/main.js"></script>
 </body>
