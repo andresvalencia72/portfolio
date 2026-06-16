@@ -64,3 +64,17 @@
   }, { rootMargin: '-45% 0px -50% 0px' });
   sections.forEach(function(s) { obs.observe(s); });
 })();
+// Form submit feedback
+(function() {
+  var btn = document.getElementById('submitBtn');
+  var label = document.getElementById('submitLabel');
+  btn.addEventListener('click', function() {
+    var orig = label.textContent;
+    label.textContent = '¡Gracias! Te respondo pronto';
+    btn.style.opacity = '.85';
+    setTimeout(function() {
+      label.textContent = orig;
+      btn.style.opacity = '1';
+    }, 2600);
+  });
+})();
