@@ -1,0 +1,107 @@
+
+    /* ============================
+       RESET & BASE
+    ============================ */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 96px;
+    }
+    body {
+      margin: 0;
+      font-family: 'Hanken Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      background: var(--bg);
+      color: var(--ink);
+      transition: background 0.55s ease, color 0.55s ease;
+    }
+    input,
+    textarea,
+    button {
+      font-family: inherit;
+    }
+    a {
+      color: inherit;
+    }
+    ::selection {
+      background: var(--coral);
+      color: #fff;
+    }
+
+    /* ============================
+       CUSTOM PROPERTIES
+    ============================ */
+    :root,
+    [data-theme="light"] {
+      --bg: #D9D7D1;
+      --band: #CFCDC6;
+      --card: #F5F4F0;
+      --ink: #16130F;
+      --ink-soft: rgba(22, 19, 15, 0.62);
+      --ink-faint: rgba(22, 19, 15, 0.4);
+      --line: rgba(22, 19, 15, 0.14);
+      --coral: #FF5A2C;
+      --coral-ink: #ffffff;
+      --salmon: #F3C7B8;
+      --frame: #16130F;
+      --shadow: rgba(22, 19, 15, 0.13);
+    }
+    [data-theme="dark"] {
+      --bg: #161310;
+      --band: #1E1A15;
+      --card: #231F19;
+      --ink: #EFEBE3;
+      --ink-soft: rgba(239, 235, 227, 0.6);
+      --ink-faint: rgba(239, 235, 227, 0.38);
+      --line: rgba(239, 235, 227, 0.15);
+      --coral: #FF6A3D;
+      --coral-ink: #161310;
+      --salmon: rgba(255, 120, 80, 0.24);
+      --frame: rgba(239, 235, 227, 0.85);
+      --shadow: rgba(0, 0, 0, 0.55);
+    }
+
+    /* ============================
+       KEYFRAMES
+    ============================ */
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to { transform: translateX(-50%); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.3; transform: scale(0.55); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(7px); }
+    }
+
+    /* ============================
+       UTILITY
+    ============================ */
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 5vw, 72px);
+    }
+
+    /* ============================
+       PROGRESS BAR
+    ============================ */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 100%;
+      background: var(--coral);
+      transform: scaleX(0);
+      transform-origin: left;
+      z-index: 90;
+      will-change: transform;
+    }
