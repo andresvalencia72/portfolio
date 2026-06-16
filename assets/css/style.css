@@ -572,3 +572,115 @@
     .marquee__bullet {
       color: var(--coral);
     }
+/* ============================
+       ABOUT
+    ============================ */
+    .about__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+      gap: clamp(36px, 5vw, 72px);
+      align-items: center;
+    }
+    .about__visual {
+      position: relative;
+      justify-self: center;
+    }
+    .about__tilt {
+      position: relative;
+      width: min(80vw, 380px);
+      aspect-ratio: 4 / 5;
+    }
+    .about__frame-bg {
+      position: absolute;
+      inset: 0;
+      transform: translate(-16px, 16px);
+      border: 2px solid var(--frame);
+      border-radius: 8px;
+    }
+    .about__frame-card {
+      position: absolute;
+      inset: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      /* background:
+        repeating-linear-gradient(135deg,
+          transparent 0 13px,
+          color-mix(in srgb, var(--ink) 7%, transparent) 13px 14px),
+        var(--card); */
+      background-image: url("../img/861eaf97-87db-47f2-9b69-f3eeabd81051.png");
+      background-size: cover;
+      box-shadow: 0 24px 50px -22px var(--shadow);
+      display: grid;
+      place-items: center;
+    }
+    .about__frame-label {
+      font-family: ui-monospace, monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-faint);
+      padding: 8px 12px;
+      border: 1px dashed var(--line);
+      border-radius: 6px;
+    }
+    .about__cube {
+      position: absolute;
+      bottom: -20px;
+      right: -20px;
+      width: 36px;
+      height: 36px;
+    }
+    .about__cube-bg {
+      position: absolute;
+      inset: 0;
+      background: var(--ink);
+      transform: rotate(-10deg) translate(6px, 6px);
+    }
+    .about__cube-fg {
+      position: absolute;
+      inset: 0;
+      background: var(--coral);
+      transform: rotate(-10deg);
+    }
+    .about__title {
+      margin: 0 0 22px;
+      font-family: 'Clash Display', sans-serif;
+      font-weight: 600;
+      font-size: clamp(34px, 5.5vw, 62px);
+      letter-spacing: -0.025em;
+      line-height: 1;
+    }
+    .about__title-name {
+      position: relative;
+      display: inline-block;
+    }
+    .about__title-bg {
+      position: absolute;
+      left: -6px;
+      right: -6px;
+      top: 10%;
+      bottom: 8%;
+      background: var(--salmon);
+      border-radius: 3px;
+      z-index: 0;
+    }
+    .about__title-name-text {
+      position: relative;
+      z-index: 1;
+    }
+    .about__text {
+      margin: 0 0 18px;
+      font-size: clamp(16px, 1.6vw, 19px);
+      line-height: 1.7;
+      color: var(--ink-soft);
+      max-width: 38em;
+    }
+    .about__text strong {
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .about__actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
