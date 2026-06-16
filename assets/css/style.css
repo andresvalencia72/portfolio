@@ -542,3 +542,33 @@
       letter-spacing: 0.14em;
       text-transform: uppercase;
     }
+/* ============================
+       MARQUEE
+    ============================ */
+    .marquee {
+      overflow: hidden;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      padding: 18px 0;
+      background: var(--band);
+      transition: background 0.55s;
+    }
+    .marquee__track {
+      display: flex;
+      width: max-content;
+      animation: marquee 26s linear infinite;
+    }
+    .marquee__content {
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      padding-right: 34px;
+      font-family: 'Clash Display', sans-serif;
+      font-weight: 500;
+      font-size: clamp(20px, 2.6vw, 30px);
+      letter-spacing: -0.01em;
+      white-space: nowrap;
+    }
+    .marquee__bullet {
+      color: var(--coral);
+    }
