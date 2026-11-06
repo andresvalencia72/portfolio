@@ -61,3 +61,20 @@ El dominio personalizado de Razonko requiere una decisión y configuración DNS 
 ## Verificar
 
 Usa un servidor estático local (evita rutas `file://` con prefijos complejos), revisa anclas, enlaces internos, mobile y accesibilidad. No llames «publicado» a ninguna funcionalidad que solo exista como contenido planificado.
+
+## Iconos
+
+Usamos iconos **Lucide** alojados en `assets/lucide-sprite.svg`, bajo licencia ISC:
+https://lucide.dev/license
+
+No requiere instalar paquetes, añadir JavaScript ni descargar fuentes desde CDNs.
+Los símbolos se referencian así (ajusta la ruta relativa en páginas anidadas):
+
+```html
+<svg class="icon" aria-hidden="true" focusable="false">
+  <use href="./assets/lucide-sprite.svg#arrow-up-right"></use>
+</svg>
+```
+
+Para incorporar otros iconos, añade su definición SVG al sprite conservando
+`viewBox="0 0 24 24"`; los estilos y colores se controlan desde `styles.css`.
