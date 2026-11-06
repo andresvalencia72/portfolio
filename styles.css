@@ -308,3 +308,16 @@ img { max-width: 100%; display: block; }
 @media (max-width:420px){.site-nav{gap:8px}.site-nav a{font-size:11px}.page-title{font-size:45px}.editorial-grid a{padding:24px}.resource-card{padding:22px}}
 
 @media (max-width:760px){.site-nav{flex-wrap:wrap;justify-content:flex-start;column-gap:18px;row-gap:8px}}
+
+/* Lucide — self-hosted SVG sprite (ISC). No JS, CDN or font dependencies. */
+.icon { display:inline-block; width:1em; height:1em; flex:none; fill:none; stroke:currentColor; stroke-width:2; stroke-linecap:round; stroke-linejoin:round; vertical-align:-.14em; }
+.button .icon, .text-link .icon, .nav-contact .icon, .resource-action .icon, .editorial-arrow .icon, .experience-link .icon { width:1.06em; height:1.06em; transition:transform .18s ease; }
+.button:hover .icon, .text-link:hover .icon, .resource-action:hover .icon, .editorial-grid a:hover .editorial-arrow .icon { transform:translate(2px,-2px); }
+.editorial-symbol .icon { display:block; width:48px; height:48px; stroke-width:1.5; }
+.principle-icon .icon { display:block; width:37px; height:37px; stroke-width:1.7; }
+.principle-icon { min-height:66px; }
+.map-center .icon { width:23px; height:23px; stroke-width:2; }
+.hero-bottom .icon { vertical-align:middle; }
+.resource-action .icon, .editorial-arrow .icon { vertical-align:-.16em; margin-left:.4em; }
+.nav-contact .icon { color:var(--red); }
+@media (prefers-reduced-motion: reduce) { .button .icon, .text-link .icon, .editorial-arrow .icon { transition:none; } }
