@@ -1,0 +1,89 @@
+/*
+ * Razonko — editorial case studies, companion to refine.css.
+ * Refinement guided by Unslop (Damir Sokolovsky, CC BY 4.0).
+ * No screenshots, fake metrics or speculative architecture.
+ */
+.case-study-list { display: grid; gap: 20px; }
+.case-story { min-width: 0; overflow: hidden; background: #151515; border: 1px solid #393435; border-radius: 8px; }
+.case-story-top { display: flex; align-items: center; justify-content: space-between; gap: 18px;
+  padding: 15px 24px; border-bottom: 1px solid #383435; color: #bcb5b2; font-size: 11px; font-weight: 650; letter-spacing: .065em; }
+.case-story-top span:first-child { color: #fff5f0; }
+.case-story-top span:last-child { font-size: 11px; color: #aba5a3; letter-spacing: 0; text-align: right; }
+.case-story-content { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.27fr) minmax(0, 1fr);
+  align-items: center; gap: 24px; padding: 28px 25px; }
+.case-story-summary { min-width: 0; align-self: stretch; border-left: 3px solid #db2620; padding-left: 19px;
+  display: flex; flex-direction: column; justify-content: center; }
+.case-story-category { margin: 0 0 14px; color: #ff7168; font-size: 11px; font-weight: 650; letter-spacing: .055em; }
+.case-story-summary h3 { margin: 0; color: #f7f3ea; font-size: clamp(23px, 2.15vw, 30px); line-height: 1.17;
+  letter-spacing: -.045em; font-weight: 750; }
+.case-story-sector { width: fit-content; margin: 18px 0 15px; padding: 5px 11px; border: 1px solid #585050; border-radius: 15px;
+  color: #e0d6d2; font-size: 11px; line-height: 1.3; }
+.case-story-summary > p:last-child { margin: 0; color: #c2bcb9; font-size: 13px; line-height: 1.68; }
+.case-schematic { margin: 0; min-width: 0; padding: 17px 16px 12px; border: 1px solid #353031; border-radius: 7px;
+  background-color: #101112;
+  background-image: linear-gradient(rgba(125,115,112,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(125,115,112,.06) 1px,transparent 1px);
+  background-size: 24px 24px; }
+.case-schematic figcaption { display: flex; gap: 10px; justify-content: space-between; margin-bottom: 20px;
+  font-size: 10px; color: #b4aaa7; letter-spacing: .025em; }
+.case-schematic figcaption span:last-child { color: #ed8079; }
+.case-flow { display: grid; grid-template-columns: minmax(0, 1fr) 14px minmax(0, 1.1fr) 14px minmax(0, 1fr);
+  gap: 3px; align-items: center; min-height: 117px; }
+.flow-stage { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.flow-node { min-width: 0; min-height: 62px; display: flex; flex-direction: column; justify-content: center;
+  align-items: center; gap: 4px; text-align: center; padding: 10px 7px; background: #1d1d1f;
+  border: 1px solid #5b5555; border-radius: 6px; }
+.flow-people .flow-node { min-height: 44px; flex-direction: row; gap: 6px; padding-inline: 5px; }
+.flow-node strong { color: #f4eee9; font-size: 11px; font-weight: 650; line-height: 1.3; }
+.flow-node small { color: #aaa1a0; font-size: 10px; line-height: 1.3; }
+.node-symbol { color: #f2a39d; font: 600 9px ui-monospace, SFMono-Regular, Menlo, monospace; }
+.node-label { color: #b7aeab; font-size: 9px; line-height: 1.2; }
+.flow-node-active { min-height: 104px; border-color: #d5423b; background: #271718; }
+.flow-node-active strong { color: #fff2f0; font-size: 15px; }
+.flow-node-result { border-color: #69605d; background: #211f1e; min-height: 79px; }
+.flow-arrow { text-align: center; color: #e96e65; font-size: 16px; font-weight: 700; }
+.schematic-disclaimer { margin: 16px 0 0; color: #aea29e; font-size: 10px; line-height: 1.5; text-align: center; }
+.flow-support { display: flex; justify-content: center; align-items: center; gap: 8px; margin: 10px 0 -2px;
+  color: #d7c4bf; font-size: 10px; line-height: 1.4; text-align: center; }
+.flow-support span { flex: none; width: 7px; height: 7px; border-radius: 50%; border: 1px solid #ef746b; background: #8e2a26; }
+.case-story-details { min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; gap: 18px;
+  border-left: 1px solid #393435; padding-left: 22px; }
+.case-detail { position: relative; padding-left: 16px; }
+.case-detail::before { content: ""; position: absolute; width: 6px; height: 6px; left: 0; top: 6px;
+  border-radius: 50%; background: #ec5f56; }
+.case-detail h4 { margin: 0 0 5px; color: #f5f0eb; font-size: 13px; font-weight: 700; line-height: 1.3; }
+.case-detail p { margin: 0; color: #bdb4b0; font-size: 12px; line-height: 1.55; }
+.case-story-stack { display: flex; align-items: center; gap: 24px; margin: 0 25px; padding: 16px 0 17px;
+  border-top: 1px solid #393435; }
+.case-story-stack > span { flex: none; color: #e3dad5; font-size: 11px; font-weight: 700; }
+.case-story-stack ul { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; list-style: none; margin: 0; padding: 0; }
+.case-story-stack li { padding: 5px 10px; color: #d4c9c4; background: #242122; border: 1px solid #4b4443;
+  border-radius: 5px; font-size: 11px; line-height: 1.25; }
+@media (max-width: 1200px) {
+  .case-story-content { grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr); gap: 24px; }
+  .case-story-summary { align-self: center; }
+  .case-story-details { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px; padding: 19px 0 0; border-left: 0; border-top: 1px solid #393435; }
+}
+@media (max-width: 760px) {
+  .case-story-content { grid-template-columns: 1fr; gap: 23px; padding: 24px 20px; }
+  .case-story-summary { align-self: auto; }
+  .case-story-summary h3 { font-size: clamp(24px, 5.3vw, 31px); }
+  .case-story-details { display: grid; grid-template-columns: 1fr; gap: 17px; padding-top: 21px; }
+  .case-story-top { padding: 14px 20px; }
+  .case-story-stack { margin-inline: 20px; flex-direction: column; align-items: flex-start; gap: 11px; }
+  .case-schematic { padding: 14px; }
+  .case-flow { grid-template-columns: minmax(0, 1fr) 13px minmax(0, 1.1fr) 13px minmax(0, 1fr); }
+}
+@media (max-width: 380px) {
+  .case-story-top { flex-direction: column; align-items: flex-start; gap: 5px; }
+  .case-story-top span:last-child { text-align: left; }
+  .case-story-content { padding-inline: 15px; }
+  .case-flow { grid-template-columns: minmax(0, 1fr) 10px minmax(0, 1.1fr) 10px minmax(0, 1fr); gap: 2px; }
+  .case-schematic { padding: 12px 8px; }
+  .flow-node { padding-inline: 3px; }
+  .flow-node strong { font-size: 10px; }
+  .flow-node-active strong { font-size: 12px; }
+  .flow-node small { font-size: 9px; }
+  .flow-people .flow-node { flex-direction: column; }
+}
+

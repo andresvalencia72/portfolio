@@ -18,6 +18,7 @@
     <link rel="icon" href="./assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
 <link rel="stylesheet" href="./refine.css" />
+    <link rel="stylesheet" href="./case-studies.css" />
 
     <title>Razonko — Andrés Valencia | Software Developer</title>
   </head>
@@ -84,49 +85,103 @@
             </p>
           </div>
 
-          <div class="case-grid">
-            <article class="case-card">
-              <div class="case-topline"><span>CASO / 001</span><span class="case-kind">PROYECTO PROFESIONAL</span></div>
-              <div class="case-graphic case-graphic-video" aria-hidden="true">
-                <div class="video-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="window-center"><span class="video-avatar"></span><span class="video-lines"><b></b><b></b><b></b></span></div><div class="video-bottom"><span></span><span></span><span></span><span></span></div></div>
-                <span class="graphic-caption">WebRTC / SFU / Real-time</span>
+          <div class="case-study-list">
+            <article class="case-story" aria-labelledby="case-training-title">
+              <header class="case-story-top">
+                <span>CASO / 001</span>
+                <span>Experiencia profesional · Código privado</span>
+              </header>
+              <div class="case-story-content">
+                <div class="case-story-summary">
+                  <p class="case-story-category">Comunicaciones en tiempo real</p>
+                  <h3 id="case-training-title">Plataforma de formación en tiempo real</h3>
+                  <p class="case-story-sector">Formación corporativa · B2B</p>
+                  <p>Desarrollo full stack de una plataforma multiempresa con sesiones de vídeo, chat y control de permisos.</p>
+                </div>
+                <figure class="case-schematic">
+                  <figcaption><span>Flujo funcional</span><span>01 / WebRTC</span></figcaption>
+                  <div class="case-flow">
+                    <div class="flow-stage flow-people">
+                      <div class="flow-node"><span class="node-symbol" aria-hidden="true">01</span><strong>Formador</strong></div>
+                      <div class="flow-node"><span class="node-symbol" aria-hidden="true">02</span><strong>Participantes</strong></div>
+                    </div>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <div class="flow-stage">
+                      <div class="flow-node flow-node-active">
+                        <span class="node-label">Comunicación</span>
+                        <strong>WebRTC</strong>
+                        <small>mediasoup · SFU</small>
+                      </div>
+                    </div>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <div class="flow-stage">
+                      <div class="flow-node flow-node-result">
+                        <span class="node-label">Funcionalidad</span>
+                        <strong>Sesión grupal</strong>
+                        <small>Audio y vídeo</small>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="schematic-disclaimer">Esquema conceptual, no arquitectura ni captura del cliente</p>
+                </figure>
+                <div class="case-story-details">
+                  <div class="case-detail"><h4>El reto</h4><p>Incorporar comunicaciones en directo a una plataforma de formación multiempresa.</p></div>
+                  <div class="case-detail"><h4>Mi contribución</h4><p>Videollamadas WebRTC y mediasoup, permisos, integración con el backend, Docker y CI/CD.</p></div>
+                  <div class="case-detail"><h4>Funcionalidad entregada</h4><p>Sesiones grupales y funcionalidades de comunicación integradas en el producto.</p></div>
+                </div>
               </div>
-              <div class="case-body">
-                <p class="case-number">01 — COMUNICACIONES EN TIEMPO REAL</p>
-                <h3>Formación que conecta personas.</h3>
-                <p>
-                  Desarrollo full stack de una plataforma de formación multiempresa.
-                  Implementé videollamadas WebRTC y su evolución a reuniones grupales
-                  con mediasoup, además de contribuir a decisiones técnicas y CI/CD.
-                </p>
-                <div class="tag-row"><span>React</span><span>NestJS</span><span>TypeScript</span><span>WebRTC</span><span>mediasoup</span></div>
-                <p class="case-disclaimer">Experiencia profesional · Código privado del cliente</p>
-              </div>
+              <footer class="case-story-stack"><span>Stack técnico</span><ul aria-label="Tecnologías"><li>React</li><li>NestJS</li><li>TypeScript</li><li>WebRTC</li><li>mediasoup</li><li>Docker</li></ul></footer>
             </article>
 
-            <article class="case-card">
-              <div class="case-topline"><span>CASO / 002</span><span class="case-kind">PROYECTO PROFESIONAL</span></div>
-              <div class="case-graphic case-graphic-map" aria-hidden="true">
-                <div class="map-lines"></div>
-                <div class="map-route route-1"></div>
-                <div class="map-route route-2"></div>
-                <span class="map-node node-a"></span>
-                <span class="map-node node-b"></span>
-                <span class="map-node node-c"></span>
-                <span class="map-center" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#crosshair"></use></svg></span>
-                <span class="graphic-caption">Geo / Events / Operations</span>
+            <article class="case-story" aria-labelledby="case-emergency-title">
+              <header class="case-story-top">
+                <span>CASO / 002</span>
+                <span>Experiencia profesional · Código privado</span>
+              </header>
+              <div class="case-story-content">
+                <div class="case-story-summary">
+                  <p class="case-story-category">Operaciones y geolocalización</p>
+                  <h3 id="case-emergency-title">Sistema de coordinación de emergencias</h3>
+                  <p class="case-story-sector">Servicios de emergencias · Sector público</p>
+                  <p>Software de gestión de incidencias y recursos, con información geoespacial y actualizaciones operativas.</p>
+                </div>
+                <figure class="case-schematic">
+                  <figcaption><span>Flujo funcional</span><span>02 / Operaciones</span></figcaption>
+                  <div class="case-flow">
+                    <div class="flow-stage">
+                      <div class="flow-node">
+                        <span class="node-label">Origen</span>
+                        <strong>Avisos 112</strong>
+                        <small>Incidencias</small>
+                      </div>
+                    </div>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <div class="flow-stage">
+                      <div class="flow-node flow-node-active">
+                        <span class="node-label">Servicios</span>
+                        <strong>NestJS</strong>
+                        <small>Estados y permisos</small>
+                      </div>
+                    </div>
+                    <span class="flow-arrow" aria-hidden="true">→</span>
+                    <div class="flow-stage">
+                      <div class="flow-node flow-node-result">
+                        <span class="node-label">Interfaz</span>
+                        <strong>Panel Angular</strong>
+                        <small>Operativa</small>
+                      </div>
+                    </div>
+                  </div>
+                  <p class="flow-support"><span aria-hidden="true"></span> Consultas de proximidad y datos geoespaciales · PostGIS</p>
+                  <p class="schematic-disclaimer">Esquema conceptual, no arquitectura ni captura del cliente</p>
+                </figure>
+                <div class="case-story-details">
+                  <div class="case-detail"><h4>El reto</h4><p>Organizar incidencias, estados y recursos sobre información recibida del 112.</p></div>
+                  <div class="case-detail"><h4>Mi contribución</h4><p>Backend NestJS, lógica de proximidad con PostGIS, permisos y panel Angular en tiempo real.</p></div>
+                  <div class="case-detail"><h4>Funcionalidad entregada</h4><p>Integración de avisos, visualización geoespacial y actualización de estados operativos.</p></div>
+                </div>
               </div>
-              <div class="case-body">
-                <p class="case-number">02 — SISTEMAS GEOESPACIALES</p>
-                <h3>Coordinación cuando importa.</h3>
-                <p>
-                  Desarrollo de un sistema operativo de coordinación de emergencias.
-                  Construí lógica geoespacial con PostGIS, servicios backend y un panel
-                  Angular con avisos en tiempo real, roles y permisos.
-                </p>
-                <div class="tag-row"><span>Angular</span><span>NestJS</span><span>PostGIS</span><span>WebSockets</span></div>
-                <p class="case-disclaimer">Experiencia profesional · Código privado del cliente</p>
-              </div>
+              <footer class="case-story-stack"><span>Stack técnico</span><ul aria-label="Tecnologías"><li>Angular</li><li>NestJS</li><li>PostGIS</li><li>PostgreSQL</li><li>WebSockets</li></ul></footer>
             </article>
           </div>
         </div>
