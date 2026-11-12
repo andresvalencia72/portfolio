@@ -49,7 +49,7 @@ El dominio personalizado de Razonko requiere una decisión y configuración DNS 
 ## Contenidos y transparencia
 
 - Los casos profesionales son descritos de forma anónima, sin código de clientes.
-- PlantOps, LedgerFlow y Shipyard siguen como propuestas **no aprobadas ni publicadas**.
+- PlantOps está en desarrollo con repositorio público; LedgerFlow está en desarrollo privado. Shipyard sigue como propuesta. Ninguno se presenta como demo publicada.
 - Los cursos y posibles playlists están etiquetados como **planificados** cuando no hay vídeos reales enlazables.
 - El primer artículo editorial de bienvenida es el único artículo completo incluido en esta entrega.
 - No hay cookies, formularios ni analíticas añadidas.
@@ -78,3 +78,7 @@ Los símbolos se referencian así (ajusta la ruta relativa en páginas anidadas)
 
 Para incorporar otros iconos, añade su definición SVG al sprite conservando
 `viewBox="0 0 24 24"`; los estilos y colores se controlan desde `styles.css`.
+
+## Rama de revisión visual
+
+La propuesta en `feat/razonko-unslop-redesign` se documenta en [docs/REDESIGN-UNSLOP.md](docs/REDESIGN-UNSLOP.md). No sustituye a la web publicada hasta recibir aprobación. Para verificar sus enlaces locales: `python3 tests/smoke.py`.
