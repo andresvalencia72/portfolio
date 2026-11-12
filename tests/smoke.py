@@ -48,14 +48,17 @@ def resolve(page, href):
 
 def main():
     pages = list(ROOT.rglob("index.html"))
-    assert len(pages) == 12, f"Expected 12 pages, found {len(pages)}"
+    assert len(pages) == 16, f"Expected 16 pages, found {len(pages)}"
     failures = []
     for page in pages:
         parser = Page()
         parser.feed(page.read_text(encoding="utf-8"))
         if (parser.headings, parser.mains, parser.menus) != (1, 1, 1):
             failures.append(f"{page}: missing or duplicate heading/main/mobile nav")
-        if len(parser.styles) != 2 or not parser.styles[-1].endswith("refine.css"):
+        expected = ["styles.css", "refine.css"]
+        if page == ROOT / "index.html" or page.parent.parent.name in {"casos", "proyectos"}:
+            expected.append("career.css")
+        if [Path(style).name for style in parser.styles] != expected:
             failures.append(f"{page}: stylesheet order")
         for href in parser.links + parser.styles + parser.images:
             try:
@@ -65,7 +68,7 @@ def main():
             except AssertionError as error:
                 failures.append(str(error))
     assert not failures, "\n".join(failures)
-    print(f"OK: {len(pages)} HTML pages, local links and assets, one main and h1 each, responsive navigation and CSS order.")
+    print(f"OK: {len(pages)} HTML pages, local links and assets, one main/h1 each, project details and CSS order.")
 
 
 if __name__ == "__main__":

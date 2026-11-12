@@ -82,3 +82,7 @@ Para incorporar otros iconos, añade su definición SVG al sprite conservando
 ## Rama de revisión visual
 
 La propuesta en `feat/razonko-unslop-redesign` se documenta en [docs/REDESIGN-UNSLOP.md](docs/REDESIGN-UNSLOP.md). No sustituye a la web publicada hasta recibir aprobación. Para verificar sus enlaces locales: `python3 tests/smoke.py`.
+
+## Enfoque para reclutadores (rama aislada)
+
+La rama `feat/razonko-recruiter-ready` conserva el diseño editorial de Red Impact y añade fichas profesionales para explicar experiencia, responsabilidades y decisiones sin publicar código privado. Consulta [docs/RECRUITER-READY.md](docs/RECRUITER-READY.md) para el alcance, validación y límites del prototipo. No se despliega automáticamente a `razonko.com`.
