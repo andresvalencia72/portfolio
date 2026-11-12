@@ -18,6 +18,7 @@
     <link rel="icon" href="./assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
 <link rel="stylesheet" href="./refine.css" />
+    <link rel="stylesheet" href="./career.css" />
 
     <title>Razonko — Andrés Valencia | Software Developer</title>
   </head>
@@ -84,51 +85,37 @@
             </p>
           </div>
 
-          <div class="case-grid">
-            <article class="case-card">
-              <div class="case-topline"><span>CASO / 001</span><span class="case-kind">PROYECTO PROFESIONAL</span></div>
-              <div class="case-graphic case-graphic-video" aria-hidden="true">
-                <div class="video-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="window-center"><span class="video-avatar"></span><span class="video-lines"><b></b><b></b><b></b></span></div><div class="video-bottom"><span></span><span></span><span></span><span></span></div></div>
-                <span class="graphic-caption">WebRTC / SFU / Real-time</span>
-              </div>
-              <div class="case-body">
-                <p class="case-number">01 — COMUNICACIONES EN TIEMPO REAL</p>
-                <h3>Formación que conecta personas.</h3>
-                <p>
-                  Desarrollo full stack de una plataforma de formación multiempresa.
-                  Implementé videollamadas WebRTC y su evolución a reuniones grupales
-                  con mediasoup, además de contribuir a decisiones técnicas y CI/CD.
-                </p>
-                <div class="tag-row"><span>React</span><span>NestJS</span><span>TypeScript</span><span>WebRTC</span><span>mediasoup</span></div>
-                <p class="case-disclaimer">Experiencia profesional · Código privado del cliente</p>
+          <div class="case-grid case-grid-recruitment">
+            <article class="case-preview">
+              <div class="case-preview-header"><span>CASO / 001</span><span>Experiencia profesional</span></div>
+              <div class="case-preview-body">
+                <p class="case-preview-category">Comunicaciones en tiempo real</p>
+                <h3>Plataforma de formación B2B</h3>
+                <p class="case-preview-intro">Una plataforma multiempresa que necesitaba comunicación por vídeo, chat y permisos diferenciados.</p>
+                <dl class="case-preview-facts">
+                  <div><dt>Mi papel</dt><dd>Desarrollo full stack, especialmente videollamadas y servicios en tiempo real.</dd></div>
+                  <div><dt>Desafío técnico</dt><dd>Evolucionar llamadas WebRTC hacia reuniones grupales con mediasoup.</dd></div>
+                </dl>
+                <div class="tag-row"><span>React</span><span>NestJS</span><span>WebRTC</span><span>mediasoup</span></div>
+                <a class="case-preview-link" href="./casos/formacion-b2b/">Leer el caso y mi contribución <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a>
               </div>
             </article>
-
-            <article class="case-card">
-              <div class="case-topline"><span>CASO / 002</span><span class="case-kind">PROYECTO PROFESIONAL</span></div>
-              <div class="case-graphic case-graphic-map" aria-hidden="true">
-                <div class="map-lines"></div>
-                <div class="map-route route-1"></div>
-                <div class="map-route route-2"></div>
-                <span class="map-node node-a"></span>
-                <span class="map-node node-b"></span>
-                <span class="map-node node-c"></span>
-                <span class="map-center" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#crosshair"></use></svg></span>
-                <span class="graphic-caption">Geo / Events / Operations</span>
-              </div>
-              <div class="case-body">
-                <p class="case-number">02 — SISTEMAS GEOESPACIALES</p>
-                <h3>Coordinación cuando importa.</h3>
-                <p>
-                  Desarrollo de un sistema operativo de coordinación de emergencias.
-                  Construí lógica geoespacial con PostGIS, servicios backend y un panel
-                  Angular con avisos en tiempo real, roles y permisos.
-                </p>
+            <article class="case-preview">
+              <div class="case-preview-header"><span>CASO / 002</span><span>Experiencia profesional</span></div>
+              <div class="case-preview-body">
+                <p class="case-preview-category">Operaciones y sistemas geoespaciales</p>
+                <h3>Coordinación de emergencias</h3>
+                <p class="case-preview-intro">Software operativo para gestionar avisos, recursos, permisos y estados en escenarios de emergencia.</p>
+                <dl class="case-preview-facts">
+                  <div><dt>Mi papel</dt><dd>Servicios backend, lógica geoespacial y panel de gestión Angular.</dd></div>
+                  <div><dt>Desafío técnico</dt><dd>Consultas de proximidad con PostGIS y sincronización de eventos operativos.</dd></div>
+                </dl>
                 <div class="tag-row"><span>Angular</span><span>NestJS</span><span>PostGIS</span><span>WebSockets</span></div>
-                <p class="case-disclaimer">Experiencia profesional · Código privado del cliente</p>
+                <a class="case-preview-link" href="./casos/emergencias/">Leer el caso y mi contribución <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a>
               </div>
             </article>
           </div>
+          <p class="case-study-privacy">Casos profesionales descritos sin acceso al código ni a los datos de los clientes. No se usan capturas ni métricas inventadas.</p>
         </div>
       </section>
 
@@ -147,18 +134,20 @@
             <article class="lab-item">
               <span class="lab-index">01 / FULL STACK</span>
               <div class="lab-title">
-                <h3><a href="https://github.com/andresvalencia72/plantops" target="_blank" rel="noopener noreferrer">PlantOps <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a></h3>
+                <h3><a href="./proyectos/plantops/">PlantOps <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a></h3>
                 <p>Gestión de activos, incidencias y órdenes de trabajo entre organizaciones.</p>
                 <div class="tag-row"><span>React</span><span>NestJS</span><span>PostgreSQL</span></div>
+                <a class="lab-more" href="./proyectos/plantops/">Ver el proyecto, su estado y las evidencias</a>
               </div>
               <span class="lab-status">En desarrollo · GitHub público</span>
             </article>
             <article class="lab-item">
               <span class="lab-index">02 / BACKEND</span>
               <div class="lab-title">
-                <h3>LedgerFlow</h3>
+                <h3><a href="./proyectos/ledgerflow/">LedgerFlow <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a></h3>
                 <p>Motor financiero ficticio para explorar transacciones, concurrencia e idempotencia.</p>
                 <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span></div>
+                <a class="lab-more" href="./proyectos/ledgerflow/">Ver enfoque técnico y estado</a>
               </div>
               <span class="lab-status">En desarrollo · privado</span>
             </article>
