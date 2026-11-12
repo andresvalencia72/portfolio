@@ -47,3 +47,11 @@ Se realizó también comprobación con Chromium/Playwright en 1440, 768, 390 y 3
 - Revisar la exactitud histórica de tecnologías y fechas con evidencias antes de cambiar más campos.
 - Revisar visualmente antes de cualquier fusión o despliegue.
 
+
+## Iteración de casos profesionales
+
+- Sustitución de las dos imágenes decorativas originales por **dos casos editoriales** con contexto, reto, contribución y trabajo realizado.
+- Los diagramas son **flujos funcionales esquemáticos**, no capturas ni afirmaciones sobre la topología real de los sistemas. Su carácter conceptual se indica junto a cada figura.
+- Tecnologías y roles redactados sin métricas, clientes identificables indebidamente ni resultados no documentados.
+- Hojas de estilo aisladas en `case-studies.css`, con diseño adaptable a móvil.
+- Mantiene la jerarquía y toda la funcionalidad de la rama aprobada.

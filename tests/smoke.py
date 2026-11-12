@@ -55,8 +55,11 @@ def main():
         parser.feed(page.read_text(encoding="utf-8"))
         if (parser.headings, parser.mains, parser.menus) != (1, 1, 1):
             failures.append(f"{page}: missing or duplicate heading/main/mobile nav")
-        if len(parser.styles) != 2 or not parser.styles[-1].endswith("refine.css"):
-            failures.append(f"{page}: stylesheet order")
+        expected_styles = ["styles.css", "refine.css"]
+        if page == ROOT / "index.html":
+            expected_styles.append("case-studies.css")
+        if [Path(style).name for style in parser.styles] != expected_styles:
+            failures.append(f"{page}: stylesheet order or missing case styles")
         for href in parser.links + parser.styles + parser.images:
             try:
                 target = resolve(page, href)
@@ -64,8 +67,15 @@ def main():
                     failures.append(f"{page}: broken link {href}")
             except AssertionError as error:
                 failures.append(str(error))
+    homepage = (ROOT / "index.html").read_text(encoding="utf-8")
+    if homepage.count('class="case-story"') != 2:
+        failures.append("Home must contain exactly two professional cases")
+    if homepage.count('Esquema conceptual, no arquitectura ni captura del cliente') != 2:
+        failures.append("Both conceptual diagrams must have a visible disclosure")
+    if 'case-graphic case-graphic-' in homepage:
+        failures.append("Old decorative illustrations have not been removed")
     assert not failures, "\n".join(failures)
-    print(f"OK: {len(pages)} HTML pages, local links and assets, one main and h1 each, responsive navigation and CSS order.")
+    print(f"OK: {len(pages)} HTML pages, local links/assets, landmarks, case studies, disclosures and CSS order.")
 
 
 if __name__ == "__main__":
