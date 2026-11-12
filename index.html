@@ -17,66 +17,70 @@
     />
     <link rel="icon" href="./assets/favicon.png" type="image/png" />
     <link rel="stylesheet" href="./styles.css" />
+<link rel="stylesheet" href="./refine.css" />
+
     <title>Razonko — Andrés Valencia | Software Developer</title>
   </head>
   <body>
     <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
     <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="#inicio" aria-label="Razonko, ir al inicio">
-          <img class="brand-mark" src="./assets/razonko-symbol.svg" alt="" width="44" height="38" />
-          <span class="brand-name">RAZONKO<span>.</span></span>
-        </a>
-        <nav class="site-nav" aria-label="Navegación principal">
-          <a href="#trabajo">Trabajo</a>
-          <a href="#proyectos">Proyectos</a>
-          <a href="./explorar/">Explorar</a>
-          <a href="#sobre-mi">Sobre mí</a>
-          <a class="nav-contact" href="#contacto">Contacto <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Razonko, volver al inicio">
+        <img class="brand-mark" src="./assets/razonko-symbol.svg" alt="" width="44" height="38" />
+        <span class="brand-name">RAZONKO<span>.</span></span>
+      </a>
+      <nav class="site-nav" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a><a href="#trabajo">Experiencia</a><a href="#proyectos">Proyectos</a><a href="./explorar/">Explorar</a><a href="#sobre-mi">Sobre mí</a>
+        <a class="nav-contact" href="#contacto">Contacto <svg class="icon" aria-hidden="true"><use href="./assets/lucide-sprite.svg#arrow-up-right"></use></svg></a>
+      </nav>
+      <details class="mobile-menu">
+        <summary>Menú <span class="menu-glyph" aria-hidden="true"></span></summary>
+        <nav aria-label="Navegación móvil">
+          <a href="#inicio">Inicio</a><a href="#trabajo">Experiencia</a><a href="#proyectos">Proyectos</a><a href="./explorar/">Explorar</a><a href="#sobre-mi">Sobre mí</a>
+          <a class="mobile-contact" href="#contacto">Contacto</a>
         </nav>
-      </div>
-    </header>
+      </details>
+    </div>
+  </header>
 
     <main id="contenido">
-      <section class="hero" id="inicio" aria-labelledby="hero-title">
-        <div class="container hero-grid">
+      <section class="hero hero-updated" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-photo" aria-hidden="true">
+          <img src="./assets/razonko-workspace.jpg" alt="" width="1400" height="897" fetchpriority="high" />
+        </div>
+        <div class="container hero-inner">
           <div class="hero-copy">
-            <h1 id="hero-title">Soy Andrés.<br />Bienvenido a<br /><span>RAZONKO.</span></h1>
-            <p class="hero-description">
-              Exploro cómo funciona la tecnología y construyo software con criterio,
-              desde los fundamentos hasta sistemas utilizados en el mundo real.
-            </p>
+            <p class="hero-eyebrow"><span class="eyebrow-slash">/</span> ANDRÉS VALENCIA · INGENIERÍA DE SOFTWARE</p>
+            <h1 id="hero-title">Desarrollador<br /><span>Full Stack.</span></h1>
+            <p class="hero-description">Construyo aplicaciones web y servicios backend, desde el diseño hasta el despliegue. He trabajado en comunicaciones en tiempo real, sistemas geoespaciales y software de negocio.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#trabajo">Explorar mi trabajo <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-              <a class="button button-outline" href="https://github.com/andresvalencia72" target="_blank" rel="noopener noreferrer">Mi GitHub <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+              <a class="button button-primary" href="#trabajo">Ver experiencia <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a>
+              <a class="button button-outline" href="#proyectos">Explorar proyectos <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a>
             </div>
-            <div class="hero-footnote">
-              <span class="status-dot" aria-hidden="true"></span>
-              <span>Desarrollo full stack · Tarragona, España</span>
-            </div>
-          </div>
-          <div class="hero-visual" aria-hidden="true">
-            <img src="./assets/razonko-hero-art.webp" alt="" width="800" height="890" fetchpriority="high" />
-            <span class="hero-visual-label">R / 001 &nbsp;—&nbsp; THINK. BUILD. LEARN.</span>
+            <p class="hero-location">Tarragona, España <span aria-hidden="true">·</span> <a href="https://github.com/andresvalencia72" target="_blank" rel="noopener noreferrer">GitHub</a> <span aria-hidden="true">·</span> <a href="https://www.linkedin.com/in/andres-felipe-valencia-ariza/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
           </div>
         </div>
-        <div class="container hero-bottom">
-          <span>DESARROLLADOR · APRENDIZ CONSTANTE</span>
-          <a href="#trabajo">SCROLL PARA EXPLORAR <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-down"></use></svg></span></a>
-        </div>
+        <div class="hero-attribution">Imagen editorial · <a href="https://unsplash.com/photos/6sAl6aQ4OWI" target="_blank" rel="noopener noreferrer">Fotis Fotopoulos / Unsplash</a></div>
       </section>
+      <div class="proof-band" aria-label="Resumen profesional">
+        <div class="container proof-grid">
+          <div><strong>2 años</strong><span>Desarrollo profesional</span></div>
+          <div><strong>Full Stack</strong><span>Web · API · Datos</span></div>
+          <div><strong>Producción</strong><span>Proyectos empresariales reales</span></div>
+          <div><strong>Razonko</strong><span>Construir y compartir</span></div>
+        </div>
+      </div>
 
       <section class="section work-section" id="trabajo" aria-labelledby="work-title">
         <div class="container">
           <div class="section-head">
             <div>
               <p class="section-kicker"><span>01</span> / EXPERIENCIA REAL</p>
-              <h2 id="work-title">Software que llegó<br />a <em>producción.</em></h2>
+              <h2 id="work-title">Proyectos reales.<br /><em>Ingeniería aplicada.</em></h2>
             </div>
             <p class="section-intro">
-              Algunas de las soluciones en las que he trabajado profesionalmente.
-              Presentadas sin información privada de los clientes.
+              Dos casos de sistemas en producción en los que participé. Explico mi contribución sin exponer información privada.
             </p>
           </div>
 
@@ -120,7 +124,7 @@
                   Construí lógica geoespacial con PostGIS, servicios backend y un panel
                   Angular con avisos en tiempo real, roles y permisos.
                 </p>
-                <div class="tag-row"><span>Angular</span><span>Spring Boot</span><span>PostGIS</span><span>WebSockets</span></div>
+                <div class="tag-row"><span>Angular</span><span>NestJS</span><span>PostGIS</span><span>WebSockets</span></div>
                 <p class="case-disclaimer">Experiencia profesional · Código privado del cliente</p>
               </div>
             </article>
@@ -133,22 +137,21 @@
           <div class="section-head">
             <div>
               <p class="section-kicker"><span>02</span> / LABORATORIO</p>
-              <h2 id="projects-title">Ideas que se convierten<br />en <em>código.</em></h2>
+              <h2 id="projects-title">Proyectos <em>en desarrollo.</em></h2>
             </div>
             <p class="section-intro">
-              Aquí publicaré proyectos propios con código abierto, pruebas, decisiones
-              de arquitectura y demostraciones reproducibles.
+              Aplicaciones personales donde pongo a prueba arquitectura, persistencia, seguridad y testing.
             </p>
           </div>
           <div class="lab-list">
             <article class="lab-item">
               <span class="lab-index">01 / FULL STACK</span>
               <div class="lab-title">
-                <h3>PlantOps</h3>
+                <h3><a href="https://github.com/andresvalencia72/plantops" target="_blank" rel="noopener noreferrer">PlantOps <svg class="icon" aria-hidden="true"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></a></h3>
                 <p>Gestión de activos, incidencias y órdenes de trabajo entre organizaciones.</p>
                 <div class="tag-row"><span>React</span><span>NestJS</span><span>PostgreSQL</span></div>
               </div>
-              <span class="lab-status">PROPUESTA · NO PUBLICADO</span>
+              <span class="lab-status">En desarrollo · GitHub público</span>
             </article>
             <article class="lab-item">
               <span class="lab-index">02 / BACKEND</span>
@@ -157,25 +160,10 @@
                 <p>Motor financiero ficticio para explorar transacciones, concurrencia e idempotencia.</p>
                 <div class="tag-row"><span>Java</span><span>Spring Boot</span><span>PostgreSQL</span></div>
               </div>
-              <span class="lab-status">PROPUESTA · NO PUBLICADO</span>
+              <span class="lab-status">En desarrollo · privado</span>
             </article>
           </div>
-          <p class="lab-note"><span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#corner-down-right"></use></svg></span> Las ideas aún no son productos terminados. Publicaré los repositorios y demos cuando existan versiones funcionales.</p>
-        </div>
-      </section>
-
-      <section class="section editorial-section" id="explorar" aria-labelledby="editorial-title">
-        <div class="container">
-          <div class="section-head"><div><p class="section-kicker"><span>03</span> / UNIVERSO RAZONKO</p><h2 id="editorial-title">Aprender. Construir.<br /><em>Compartir.</em></h2></div>
-          <p class="section-intro">Una parte de Razonko es mi trabajo; otra, las ideas, cursos y aprendizajes que comparto mientras sigo construyendo.</p></div>
-          <div class="editorial-grid">
-            <a class="editorial-feature" href="./blog/"><span class="editorial-meta">01 / BLOG</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#book-open"></use></svg></span><h3>El porqué detrás del código.</h3><p>Artículos de tecnología, patrones, ingeniería y decisiones técnicas explicadas con ejemplos cotidianos.</p><span class="editorial-arrow">Explorar artículos <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-            <a class="editorial-tile" href="./youtube/"><span class="editorial-meta">02 / VIDEO</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#circle-play"></use></svg></span><h3>Razonko en YouTube</h3><p>Series educativas, episodios y recursos para acompañar cada vídeo.</p><span class="editorial-arrow">Ver canal y series <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-            <a class="editorial-tile" href="./cursos/"><span class="editorial-meta">03 / CURSOS</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#graduation-cap"></use></svg></span><h3>Cursos con criterio</h3><p>Temarios organizados, ejercicios y material de apoyo. Las primeras series están en planificación.</p><span class="editorial-arrow">Explorar cursos <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-            <a class="editorial-tile" href="./rutas/"><span class="editorial-meta">04 / APRENDER</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#route"></use></svg></span><h3>Rutas de aprendizaje</h3><p>De los fundamentos a la ingeniería de software, sin depender de copiar y pegar.</p><span class="editorial-arrow">Ver las rutas <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-            <a class="editorial-tile" href="./diario/"><span class="editorial-meta">05 / BUILD IN PUBLIC</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#git-branch"></use></svg></span><h3>Diario de proyectos</h3><p>Decisiones, avances y problemas encontrados al desarrollar mis proyectos personales.</p><span class="editorial-arrow">Seguir el proceso <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
-          </div>
-          <div class="editorial-bottom"><p>Contenido en crecimiento. No inventamos episodios ni demos que todavía no están publicados.</p><a class="text-link" href="./explorar/">Ver todo el contenido <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a></div>
+          <p class="lab-note"><span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#corner-down-right"></use></svg></span> PlantOps ya tiene código en GitHub. LedgerFlow está en desarrollo en un repositorio privado. Ninguno se presenta como producto terminado.</p>
         </div>
       </section>
 
@@ -183,8 +171,8 @@
         <div class="container">
           <div class="section-head">
             <div>
-              <p class="section-kicker"><span>04</span> / FORMA DE TRABAJAR</p>
-              <h2 id="method-title">No solo el qué.<br /><em>También el cómo.</em></h2>
+              <p class="section-kicker"><span>03</span> / FORMA DE TRABAJAR</p>
+              <h2 id="method-title">Ingeniería <em>con criterio.</em></h2>
             </div>
             <p class="section-intro">Me interesa el razonamiento que hay detrás de cada decisión técnica, no acumular herramientas sin propósito.</p>
           </div>
@@ -197,11 +185,28 @@
         </div>
       </section>
 
+
+      <section class="section editorial-section" id="explorar" aria-labelledby="editorial-title">
+        <div class="container">
+          <div class="section-head"><div><p class="section-kicker"><span>04</span> / UNIVERSO RAZONKO</p><h2 id="editorial-title">Explorar <em>Razonko.</em></h2></div>
+          <p class="section-intro">Artículos, temarios y rutas para compartir lo que aprendo al desarrollar software.</p></div>
+          <div class="editorial-grid">
+            <a class="editorial-feature" href="./blog/"><span class="editorial-meta">01 / BLOG</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#book-open"></use></svg></span><h3>El porqué detrás del código.</h3><p>Artículos de tecnología, patrones, ingeniería y decisiones técnicas explicadas con ejemplos cotidianos.</p><span class="editorial-arrow">Explorar artículos <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+            <a class="editorial-tile" href="./youtube/"><span class="editorial-meta">02 / VIDEO</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#circle-play"></use></svg></span><h3>Razonko en YouTube</h3><p>Series educativas, episodios y recursos para acompañar cada vídeo.</p><span class="editorial-arrow">Ver canal y series <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+            <a class="editorial-tile" href="./cursos/"><span class="editorial-meta">03 / CURSOS</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#graduation-cap"></use></svg></span><h3>Cursos con criterio</h3><p>Temarios organizados, ejercicios y material de apoyo. Las primeras series están en planificación.</p><span class="editorial-arrow">Explorar cursos <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+            <a class="editorial-tile" href="./rutas/"><span class="editorial-meta">04 / APRENDER</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#route"></use></svg></span><h3>Rutas de aprendizaje</h3><p>De los fundamentos a la ingeniería de software, sin depender de copiar y pegar.</p><span class="editorial-arrow">Ver las rutas <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+            <a class="editorial-tile" href="./diario/"><span class="editorial-meta">05 / BUILD IN PUBLIC</span><span class="editorial-symbol" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#git-branch"></use></svg></span><h3>Diario de proyectos</h3><p>Decisiones, avances y problemas encontrados al desarrollar mis proyectos personales.</p><span class="editorial-arrow">Seguir el proceso <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
+          </div>
+          <div class="editorial-bottom"><p>Material publicado y temarios en planificación, claramente diferenciados.</p><a class="text-link" href="./explorar/">Ver todo el contenido <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a></div>
+        </div>
+      </section>
+
+
       <section class="section about-section" id="sobre-mi" aria-labelledby="about-title">
         <div class="container about-grid">
           <div>
             <p class="section-kicker"><span>05</span> / SOBRE MÍ</p>
-            <h2 id="about-title">Curiosidad por entender.<br /><em>Ganas de construir.</em></h2>
+            <h2 id="about-title">Sobre mí.<br /><em>Más allá del código.</em></h2>
             <p class="about-text">
               Soy Andrés Valencia, desarrollador de software. He trabajado en
               aplicaciones de negocio, comunicaciones en tiempo real, sistemas
@@ -217,7 +222,7 @@
           <div class="experience-panel">
             <div class="experience-heading"><span>TRAYECTORIA</span><span>2024 — 2026</span></div>
             <div class="experience-item"><span class="experience-date">2026 / ABR — OCT</span><h3>Estudio Ayllón</h3><p>Desarrollo web · WooCommerce · PrestaShop · GitHub Actions</p></div>
-            <div class="experience-item"><span class="experience-date">2024 / FEB — 2026 / ABR</span><h3>Codesian Software Tech</h3><p>Ingeniería de software · Full Stack · Sistemas en producción</p></div>
+            <div class="experience-item"><span class="experience-date">2024 — 2026 · prácticas y etapa profesional</span><h3>Codesian Software Tech</h3><p>Ingeniería de software · Full Stack · Sistemas en producción</p></div>
             <a class="experience-link" href="https://www.linkedin.com/in/andres-felipe-valencia-ariza/" target="_blank" rel="noopener noreferrer">Ver perfil profesional <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
           </div>
         </div>
@@ -226,7 +231,7 @@
       <section class="contact-section" id="contacto" aria-labelledby="contact-title">
         <div class="container contact-inner">
           <p class="section-kicker"><span>06</span> / CONTACTO</p>
-          <h2 id="contact-title">¿Construimos<br /><em>algo juntos?</em></h2>
+          <h2 id="contact-title">¿Hablamos de<br /><em>tu equipo?</em></h2>
           <p>Estoy interesado en oportunidades de desarrollo de software y en colaborar en proyectos donde se valore el criterio técnico.</p>
           <div class="contact-actions">
             <a class="button button-light" href="https://www.linkedin.com/in/andres-felipe-valencia-ariza/" target="_blank" rel="noopener noreferrer">Hablemos en LinkedIn <span aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/lucide-sprite.svg#arrow-up-right"></use></svg></span></a>
